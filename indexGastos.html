@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="styleGastos.css">
+  <title>Mi finanza personal</title>
+</head>
+<body>
+   <header>
+  
+    <div class="container__header">
+        <div class="logo">
+            <img class="sombra" src="img/finanzas.jpeg" alt="">
+        </div>
+        <div class="container__nav">
+            <nav id="nav">
+                <ul>
+                    <h1> Mis Finanzas Personales</h1>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <button id="regresarInicio" class="button"><a href="index.html">Página de inicio</a></button> <!-- Retorna a la pagina inicio -->
+</header>
+
+    <h2>¡Agregue un nuevo gasto!</h2>
+
+    <div id="form-box">
+      <form>
+        <div>
+          <span>Medio de pago utilizados:</span> 
+            <select id="medio-pago" required>
+                <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                <option value="Tarjeta de débito">Tarjeta de débito</option>
+                <option value="Efectivo">Efectivo</option>
+            </select>
+        </div>
+        
+        <div>
+          <span>Concepto:</span> <input type="text" id="concepto" class="input" placeholder="¿En qué gasté?" required>
+        </div><br>
+        
+        <div>
+          <span>Fecha:</span> <input type="date" class="input" id="fecha">
+        </div>
+        
+        <div>
+          <span>Monto:</span> <input type="number" class="input" id="monto" placeholder="¿Cuánto?" maxlength="9" >>
+        </div>
+        
+      </form>
+    </div>
+      <div id="button" class="button" onclick="onRegistrarGasto()">Registrar Gastos</div>
+
+<script src="scriptGasto.js"></script>
+</body>
+</html>
